@@ -1,0 +1,10 @@
+[color]
+	ui = true
+[user]
+	name = janghyuan
+	email = janghyuan@163.com
+[alias]
+	c = commit
+	co = checkout
+	s = status
+	b = branch
