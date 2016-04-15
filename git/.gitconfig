@@ -8,3 +8,5 @@
 	co = checkout
 	s = status
 	b = branch
+[push]
+	default = matching
