@@ -13,6 +13,7 @@ Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-surround'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
 """""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""
@@ -45,7 +46,13 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * NERDTree
 map <C-m> :ClearCtrlPCache<CR>
 
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
+"set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
 set laststatus=2
 
 inoremap {<CR> {<CR>}<C-o>O
