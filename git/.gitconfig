@@ -10,3 +10,5 @@
 	b = branch
 [push]
 	default = matching
+[core]
+	pager = cat
