@@ -1,0 +1,13 @@
+{
+		"font_size": 14,
+		"font_face": "Monaco",
+		"highlight_line": true,
+		"hot_exit": false,
+		"ignored_packages": []
+}
+
+/*
+
+defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false
+
+*/
