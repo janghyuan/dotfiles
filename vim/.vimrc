@@ -56,3 +56,7 @@ let g:airline#extensions#tabline#left_alt_sep = ''
 set laststatus=2
 
 inoremap {<CR> {<CR>}<C-o>O
+
+if exists('$TMUX')
+	set term=screen-256color
+endif
