@@ -14,6 +14,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 """""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""
@@ -60,3 +62,7 @@ inoremap {<CR> {<CR>}<C-o>O
 if exists('$TMUX')
 	set term=screen-256color
 endif
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
