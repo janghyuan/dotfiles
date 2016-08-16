@@ -45,7 +45,8 @@ set noexpandtab
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:p:h').'/' : '%%'
 
 map <C-n> :NERDTreeToggle<CR>
-autocmd vimenter * NERDTree
+" 进入 vim 时自动启用 NERDTree
+" autocmd vimenter * NERDTree
 map <C-m> :ClearCtrlPCache<CR>
 
 "set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
