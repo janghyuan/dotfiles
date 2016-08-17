@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
@@ -41,13 +42,20 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set noexpandtab
+" Ex mode auto completion
+set wildmenu
+set wildmode=full
+" 在 Ex mode 时映射<C-n> <C-p>为<Down> <Up>
+" 缘由是 <C-n> <C-p> 不会像 <Down> <Up> 那样对命令历史进行过滤
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
 
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:p:h').'/' : '%%'
 
 map <C-n> :NERDTreeToggle<CR>
 " 进入 vim 时自动启用 NERDTree
 " autocmd vimenter * NERDTree
-map <C-m> :ClearCtrlPCache<CR>
+map <C-m><C-m> :ClearCtrlPCache<CR>
 
 "set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
 
