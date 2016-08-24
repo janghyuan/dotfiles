@@ -33,6 +33,8 @@ set backspace=eol,indent,start
 set hidden
 set t_Co=256
 colors zenburn
+set list
+set listchars=tab:▸\ ,eol:¬
 
 set hlsearch
 set incsearch
